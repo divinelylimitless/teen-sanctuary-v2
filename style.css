@@ -166,17 +166,26 @@ nav a:hover{
 
 /* ABOUT */
 
-.about-section{
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:70px;
-  align-items:center;
-  padding:90px 80px;
+.about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    padding: 80px 10%;
+    flex-wrap: wrap;
+}.about-image,
+.about-text {
+    flex: 1;
+}
+.about-text {
+    max-width: 520px;
 }
 
-.about-image img{
-  width:100%;
-  border-radius:30px;
+.about-image img {
+    width: 100%;
+    max-width: 380px;
+    border-radius: 24px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
 }
 
 .small-title{
@@ -186,12 +195,13 @@ nav a:hover{
   margin-bottom:18px;
 }
 
-.about-text h2{
-  font-family:'Cormorant Garamond', serif;
-  font-size:64px;
-  line-height:1;
-  color:#6f7e5a;
-  margin-bottom:25px;
+.about-text h5 {
+    font-size: 24px;
+    color: #c58f9c;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+    text-transform: none;
 }
 
 .about-text p{
@@ -339,10 +349,14 @@ nav a:hover{
   }
 
   .support-section h2,
-  .about-text h2,
-  .cta-centre h2{
-    font-size:42px;
-  }
+ .about-text h2 {
+    font-size: 52px;
+    line-height: 1.2;
+    color: #6f7b5c;
+    margin-bottom: 20px;
+    font-family: 'Cormorant Garamond', serif;
+
+}
 
   .bottom-bar{
     flex-direction:column;
@@ -351,4 +365,96 @@ nav a:hover{
     padding:20px;
   }
 
+}
+/* MENTORSHIP SECTION */
+
+.mentorship {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+    padding: 100px 10%;
+    background-color: #f8f3ed;
+    flex-wrap: wrap;
+}
+
+.mentorship-text {
+    flex: 1;
+    min-width: 300px;
+}
+
+.mentorship-text h2 {
+    font-size: 48px;
+    color: #6f7b5c;
+    margin-bottom: 20px;
+}
+
+.mentorship-text p {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.mentor-btn {
+    display: inline-block;
+    padding: 14px 30px;
+    background-color: #a8b393;
+    color: white;
+    text-decoration: none;
+    border-radius: 40px;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.mentor-btn:hover {
+    background-color: #8f9b7a;
+}
+
+.mentorship-image {
+    flex: 1;
+    min-width: 300px;
+}
+
+.mentorship-image img {
+    width: 100%;
+    border-radius: 20px;
+}
+.about-text {
+    flex: 1;
+}
+
+.about-image {
+    flex: 1;
+}
+
+.about-image img {
+    width: 100%;
+    border-radius: 20px;
+}
+.about-text a {
+    display: inline-block;
+    margin-top: 20px;
+    text-decoration: none;
+    background-color: #d8a7b1;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 30px;
+    font-size: 16px;
+    transition: 0.3s;
+}
+.about-text a:hover {
+    background-color: #c78d99;
+}
+.about-text p {
+    font-size: 20px;
+    line-height: 1.8;
+    color: #666;
+    max-width: 550px;
+}
+.about-image img {
+    width: 100%;
+    max-width: 420px;
+    border-radius: 24px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
 }
