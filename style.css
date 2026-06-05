@@ -524,3 +524,45 @@ nav a:hover{
   color: #666;
   margin-bottom: 0;
 }
+
+@media (max-width: 900px) {
+  .about {
+    flex-direction: column;
+    padding: 50px 25px;
+    gap: 30px;
+  }
+
+  .about-image,
+  .about-text {
+    width: 100%;
+    max-width: 100%;
+    flex: none;
+  }
+
+  .about-image img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    max-height: 420px;
+    object-fit: cover;
+    display: block;
+  }
+
+  .about-text {
+    padding: 30px 24px;
+    text-align: center;
+  }
+
+  .about-text h5 {
+    font-size: 26px;
+  }
+
+  .about-text h2 {
+    font-size: 38px;
+    line-height: 1.15;
+  }
+
+  .about-text p {
+    font-size: 17px;
+  }
+}
